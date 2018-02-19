@@ -1,6 +1,6 @@
 # Sublime Text 的 Markdown 编辑环境搭建
 
-你可以首先阅读我的[介绍](https://github.com/EthanTongLIU/EthanTongLIU.github.io/edit/master/README.html)来了解我。
+你可以首先阅读我的[介绍](README.html)来了解我。
 
 [TOC]
 
