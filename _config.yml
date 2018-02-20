@@ -1,6 +1,6 @@
 # Site settings
-title: sunnyliutong
-SEOTitle: 刘通的博客 | sunnyliutong Blog
+title: sunnyliutong's blog
+SEOTitle: 刘通的博客 | sunnyliutong's blog
 header-img: img/home-bg.jpg
 email: sunnyliutong@qq.com
 description: "这里是 @sunnyliutong 的个人博客"
@@ -68,7 +68,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/photo-self.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
