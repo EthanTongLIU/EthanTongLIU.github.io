@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+disqus_username:                      # disqus 国内被墙，暂不启用
 
 # Netease setttings
 netease_comment: false
@@ -60,8 +60,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id:             # Format: UA-xxxxxx-xx ， 例如作者黄玄的为 'UA-49627206-1'
+ga_domain: EthanTongLIU
 
 
 
