@@ -1,13 +1,17 @@
 ---
 layout:     post
 title:      "Sublime Text 的 Markdown 编辑环境搭建"
-subtitle:   " \"Hello World, Hello Blog\""
+subtitle:   "Build edit environment of Markdown in Sublime Text"
 date:       2018-02-20 16:03:00
 author:     "LiuTong"
 header-img: "img/post-bg-2015.jpg"
+header-mask:  0.3
 catalog: true
+multilingual: true
 tags:
     - Markdown
+    - LaTeX
+    - Sublime Text
 ---
 
 # Sublime Text 的 Markdown 编辑环境搭建
