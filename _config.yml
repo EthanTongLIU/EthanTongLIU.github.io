@@ -1,9 +1,9 @@
 # Site settings
-title: sunnyliutong
-SEOTitle: 刘通的博客 | sunnyliutong Blog
+title: 吾将上下而求索
+SEOTitle: 刘通的博客 | LiuTong Blog
 header-img: img/home-bg.jpg
 email: sunnyliutong@qq.com
-description: "这里是 @sunnyliutong 的个人博客"
+description: "这里是刘通的个人博客"
 keyword: "刘通，sunnyliutong"
 url: "https://EthanTongLIU.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
