@@ -2,13 +2,14 @@
 layout:     post
 title:      "tags标签显示测试"
 subtitle:   ""
-date:       2018-02-20 12:00:00
+date:       2018-02-20 23:31:00
 author:     "LiuTong"
 header-img: ""
 header-mask:  0.3
 catalog:      true
 tags:
     - 生活
+    - 随笔
 ---
 
 > 在知乎被删帖，我理解知乎。
