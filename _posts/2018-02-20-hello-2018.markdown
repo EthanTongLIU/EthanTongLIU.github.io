@@ -4,7 +4,7 @@ title:        "你好，2018"
 subtitle:     "Hello,2018"
 date:         2018-02-20 23:07:00
 author:       "LiuTong"
-header-img:   "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
+header-img:   "img/in-post/post-bg-hello-2018.jpg"
 header-mask:  0.3
 catalog:      true
 multilingual: true
