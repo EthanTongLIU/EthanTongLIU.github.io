@@ -201,11 +201,29 @@ Sublime Text 需要使用包控制插件（也就是这里的 Package Control �
     \sum\limits_{0}^{+\infty}\dfrac{n^2}{2}
 \end{equation}
 
-![][eq-1]
+**注：这里无法显示出编译好的数学公式，因为这里仅仅是对本地安装的 MarkdownPreview 插件开启的 Mathjax 数学环境支持，而本页面上传到服务器中以后再从互联网上查看的时候脱离了本地环境，因而与本地 Markdown Preview 插件环境已无任何关联，所以也就脱离了 Mathjax 数学环境支持。**
 
+**如果你想在网页中插入数学公式，请使用如下的几行代码：**
+
+```
+![][公式标签]
+
+[公式标签]: http://latex.codecogs.com/gif.latex?LaTeX公式源码
+```
+
+比如这里我就插入了一个求和公式，代码如下：
+
+```
+![][eq-1]
+[eq-1]: http://latex.codecogs.com/gif.latex?\sum\limits_{0}^{+\infty}\dfrac{n^2}{2}
+```
+
+显示效果如下：
+
+![][eq-1]
 [eq-1]: http://latex.codecogs.com/gif.latex?\sum\limits_{0}^{+\infty}\dfrac{n^2}{2}
 
-**注：这里无法显示出编译好的数学公式，因为这里仅仅是对本地安装的 MarkdownPreview 插件开启的 Mathjax 数学环境支持，而本页面上传到服务器中以后再从互联网上查看的时候脱离了本地环境，因而与本地 Markdown Preview 插件环境已无任何关联，所以也就脱离了 Mathjax 数学环境支持。**
+很明显的缺点就是这种方法是通过网络将 LaTeX 公式源码发送给 codecogs 服务器，服务器解析源码生成图片，再传送给网页，所以这里实际上插入的是生成的公式的图片，比较不清晰，不过也可以看得清，满足阅读要求是够了，不过我建议如果是用 Markdown 写个人笔记，并且之后打印成 pdf 格式，还是使用本地预览功能，使用 Mathjax 生成公式，这样的公式与 LaTeX 编译生成的公式效果是一样的。
 
 *   开启代码高亮支持
 
