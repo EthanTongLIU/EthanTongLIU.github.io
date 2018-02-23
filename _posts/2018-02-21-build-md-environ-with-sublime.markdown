@@ -201,6 +201,12 @@ Sublime Text 需要使用包控制插件（也就是这里的 Package Control �
     \sum\limits_{0}^{+\infty}\dfrac{n^2}{2}
 \end{equation}
 
+![][eq-1]
+
+[eq-1]: http://latex.codecogs.com/gif.latex?\sum\limits_{0}^{+\infty}\dfrac{n^2}{2}
+
+**注：这里无法显示出编译好的数学公式，因为这里仅仅是对本地安装的 MarkdownPreview 插件开启的 Mathjax 数学环境支持，而本页面上传到服务器中以后再从互联网上查看的时候脱离了本地环境，因而与本地 Markdown Preview 插件环境已无任何关联，所以也就脱离了 Mathjax 数学环境支持。**
+
 *   开启代码高亮支持
 
 由于需要经常在 Markdown 中插入代码，如果希望插入的代码保持高亮风格，需要按照上一条的方法在相同的位置添加如下代码：
