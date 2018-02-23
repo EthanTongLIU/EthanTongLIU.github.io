@@ -215,12 +215,14 @@ Sublime Text 需要使用包控制插件（也就是这里的 Package Control �
 
 ```
 ![][eq-1]
+
 [eq-1]: http://latex.codecogs.com/gif.latex?\sum\limits_{0}^{+\infty}\dfrac{n^2}{2}
 ```
 
 显示效果如下：
 
 ![][eq-1]
+
 [eq-1]: http://latex.codecogs.com/gif.latex?\sum\limits_{0}^{+\infty}\dfrac{n^2}{2}
 
 很明显的缺点就是这种方法是通过网络将 LaTeX 公式源码发送给 codecogs 服务器，服务器解析源码生成图片，再传送给网页，所以这里实际上插入的是生成的公式的图片，比较不清晰，不过也可以看得清，满足阅读要求是够了，不过我建议如果是用 Markdown 写个人笔记，并且之后打印成 pdf 格式，还是使用本地预览功能，使用 Mathjax 生成公式，这样的公式与 LaTeX 编译生成的公式效果是一样的。
