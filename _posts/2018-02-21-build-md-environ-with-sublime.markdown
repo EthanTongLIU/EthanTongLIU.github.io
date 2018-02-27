@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Sublime Text 的 Markdown 编辑环境搭建过程"
+title:        "Sublime Text 的 Markdown 编辑环境搭建"
 subtitle:     "不使用 Markdown 的 IDE，搭建一个称心如意的 Markdown 写作环境"
 date:         2018-02-21 19:17:00
 author:       "LiuTong"

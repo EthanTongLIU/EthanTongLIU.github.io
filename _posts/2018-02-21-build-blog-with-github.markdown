@@ -81,7 +81,7 @@ tags:
 
 注意一点，Git 和 Github 不是一个东西，你需要使用 Git 来管理项目而 Github 只是托管你的项目代码的云服务器。我的搭建环境是 Windows，所以在本地安装 Git 方便，前往[这里](https://git-scm.com/download/win)下载你需要的 Windows 安装程序，然后双击 .exe 文件直接安装即可，注意记住你的安装目录。如果安装成功，此时在桌面上右击鼠标，就会看到两个图标，分别是`Git GUI Here`和`Git Bash Here`，在接下来的所有过程中，我们一直使用`Git Bash Here`。
 
-<font color=red>如果你希望直接在 Windows 自带的命令行下运行 Git 的命令（即不使用 Git 自带的命令行 Git Bash，而直接打开 Windows 自带的命令行运行 Git 命令），这时候就需要把 Git 加到 Windows 的环境变量中去，方法就是找到 Git 安装目录下的 bin 文件夹，将其加到 Windows 的环境变量中去，Win10 如何添加环境变量请参考[这里](https://jingyan.baidu.com/article/47a29f24610740c0142399ea.html)。</font>
+如果你希望直接在 Windows 自带的命令行下运行 Git 的命令（即不使用 Git 自带的命令行 Git Bash，而直接打开 Windows 自带的命令行运行 Git 命令），这时候就需要把 Git 加到 Windows 的环境变量中去，方法就是找到 Git 安装目录下的 bin 文件夹，将其加到 Windows 的环境变量中去，Win10 如何添加环境变量请参考[这里](https://jingyan.baidu.com/article/47a29f24610740c0142399ea.html)。
 
 ### 为你的博客项目建一个 Repo
 
@@ -89,35 +89,35 @@ tags:
 
 * *登录自己的 Github，点击 + 号，创建新仓库*
 
-  ![](../img/in-post/post-github-new-repo.jpg){:width="50%"}
+  ![](img/in-post/post-github-new-repo.jpg)
 
 * *初始化新仓库，注意个人博客项目仓库的文件名必须写成 username.github.io 的格式，这里的 username 是你的账号名，比如我的名字是 EthanTongLIU，我的仓库的名字就取为 EthanTongLIU.github.io*
 
-  ![](../img/in-post/post-github-init-new-repo.jpg){:width="50%"}
+  ![](img/in-post/post-github-init-new-repo.jpg)
 
 * *已经创建好的新仓库*
 
-  ![](../img/in-post/post-github-new-repo-done.jpg){:width="50%"}
+  ![](img/in-post/post-github-new-repo-done.jpg)
 
 ### 为项目开启 Pages 选项
 
 * *找到仓库的 Settings*
 
-  ![](../img/in-post/post-github-repo-setting.jpg){:width="50%"}
+  ![](img/in-post/post-github-repo-setting.jpg)
 
 * *找到 Github Pages 选项，选择主分支，保存。当然你也可以在这里选择一个 theme（主题），这里的主题是 Github 提供的 Jekyll 样式的模板，但是我们稍后将自己找模板，所以这里不必选择模板*
 
-  ![](../img/in-post/post-github-repo-setting-pages.jpg){:width="50%"}
+  ![](img/in-post/post-github-repo-setting-pages.jpg)
 
 ### 将项目克隆到本地
 
 找到项目的地址，按下 `clone or download`，选择克隆至剪贴板，这样项目的地址就被复制下来了。
 
-![](../img/in-post/post-github-repo-copy-to-clipboard.jpg){:width="50%"}
+![](img/in-post/post-github-repo-copy-to-clipboard.jpg)
 
 接着需要你在本地电脑上希望放置项目的地方运行 Github 的命令行，即`Git Bash Here`，运行如下代码：
 
-```git
+```
 git clone 项目仓库的地址
 ```
 
@@ -135,15 +135,15 @@ git clone 项目仓库的地址
 
 下载的方法和之前克隆仓库至本地的方法大致相同，不过在这里你可以直接下载项目仓库的压缩文件就可以了，下载到本地之后解压，将里面的东西复制到你的仓库中，然后做修改即可。修改说明可以按照黄玄的项目的 README.md 的说明来做即可。
 
-<font color=red>黄玄说他做了一个[稳定版的模板](https://github.com/Huxpro/huxblog-boilerplate)，但是当我将这个稳定版的模板下载下来之后，实际在访问网页的时候是有问题的，无法渲染出正确的格式，所以我建议大家可以参照我上面的说明直接克隆作者的仓库，然后将里面的所有文件复制到自己的仓库中做修改，这是目前我试过的最简洁高效的方法。</font>
+黄玄说他做了一个[稳定版的模板](https://github.com/Huxpro/huxblog-boilerplate)，但是当我将这个稳定版的模板下载下来之后，实际在访问网页的时候是有问题的，无法渲染出正确的格式，所以我建议大家可以参照我上面的说明直接克隆作者的仓库，然后将里面的所有文件复制到自己的仓库中做修改，这是目前我试过的最简洁高效的方法。
 
-<font color=green>当然有的教程说可以直接将原作者的项目 fork 一下，这样当原作者在项目上做出什么修改的时候，你就会收到相应的提示，但是这种做法比较麻烦，我试了多次也没有成功，所以我建议大家就像我之前介绍的那样弄就可以了。有关 Git 的 fork 的相关说明，请参看[这里](https://linux.cn/article-4292-1-rss.html)，该说明讲解的简洁透彻，一针见血，实为现在网上为数不多的说明文档之良品。</font>
+当然有的教程说可以直接将原作者的项目 fork 一下，这样当原作者在项目上做出什么修改的时候，你就会收到相应的提示，但是这种做法比较麻烦，我试了多次也没有成功，所以我建议大家就像我之前介绍的那样弄就可以了。有关 Git 的 fork 的相关说明，请参看[这里](https://linux.cn/article-4292-1-rss.html)，该说明讲解的简洁透彻，一针见血，实为现在网上为数不多的说明文档之良品。
 
 ## Jekyll 静态网页之结构
 
 你从下载好的模板中也可以看出，里面包含各种各样的文件和文件夹，其实这些名字并不是随便起的，就像下图一样，即本人的博客仓库里面的文件结构。
 
-![](../img/in-post/post-structure-of-repo.jpg){:width="50%"}
+![](img/in-post/post-structure-of-repo.jpg)
 
 实际上，一个基本的 Jekyll 网站的目录结构一般是这样的：
 
@@ -210,7 +210,7 @@ Markdown 是一种轻量级的文本标记语言，它是的出现不是为了�
 
 当你对模板做好一切必要的删除和修改时，你就需要将你的本地项目上传至 Github。进入你的本地项目文件夹，在这里打开 Git 的命令行，运行如下命令：
 
-```git
+```
 git pull
 git add -A .
 git commit -m "简单描述一下你本次做的修改"
@@ -235,7 +235,7 @@ git push -u origin master
 
 当你拿到注册完成的合法的域名之后，就需要将你的博客网站和注册的域名联系起来了，这一步通常称为域名解析，不同的注册平台都会对解析过程进行讲解，况且也不复杂，只是填几个空的问题，但是注意这里要在你的本地项目仓库中添加一个 CNAME 文件（文件名），里面填上你注册的域名，比如我填的就是 iliutong.cn。另外需要回到你的 Github 仓库中，找到仓库的 settings，仍然是在 Pages 设置部分，在 Custom domain 填入你注册的域名，再点击 Save，如下图。
 
-![](../img/in-post/post-github-repo-setting-pages-custom-domain.jpg){:width="50%"}
+![](img/in-post/post-github-repo-setting-pages-custom-domain.jpg)
 
 这时，你需要回到域名提供商的域名控制台那里设置一下域名解析，要填写按照 CNAME 来绑定，具体内容按要求自己填写。
 
