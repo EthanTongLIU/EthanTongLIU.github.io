@@ -74,3 +74,5 @@ tags:
 ## 使用 Github 建立本地仓库
 
 ### 注册 Github 的账号
+
+如果你还不是 Github 的成员，请前往 [Github](https://github.com/) 注册一个自己的账号，类似于各种网站的注册过程，非常简单。
