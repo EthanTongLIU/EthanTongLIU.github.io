@@ -78,3 +78,13 @@ tags:
 ### 注册 Github 的账号
 
 如果你还不是 Github 的成员，请前往 [Github](https://github.com/) 注册一个自己的账号，类似于各种网站的注册过程，非常简单。
+
+### 在本地安装 Git
+
+注意一点，Git 和 Github 不是一个东西，你需要使用 Git 来管理项目而 Github 只是托管你的项目代码的云服务器。我的搭建环境是 Windows，所以在本地安装 Git 方便，前往[这里](https://git-scm.com/download/win)下载你需要的 Windows 安装程序，然后双击 .exe 文件直接安装即可，注意记住你的安装目录。如果安装成功，此时在桌面上右击鼠标，就会看到两个图标，分别是`Git GUI Here`和`Git Bash Here`，在接下来的所有过程中，我们一直使用`Git Bash Here`。
+
+如果你希望直接在 Windows 自带的命令行下运行 Git 的命令（即不使用 Git 自带的命令行 Git Bash，而直接打开 Windows 自带的命令行运行 Git 命令），这时候就需要把 Git 加到 Windows 的环境变量中去，方法就是找到 Git 安装目录下的 bin 文件夹，将其加到 Windows 的环境变量中去，Win10 如何添加环境变量请参考[这里](https://jingyan.baidu.com/article/47a29f24610740c0142399ea.html)。
+
+### 为你的博客项目建一个 Repo
+
+所谓 Repo 就是仓库的意思，这里我们要建立的博客其实就是一个项目，我们可以通过像管理普通项目一样管理我们的博客。
