@@ -181,9 +181,7 @@ Jekyll 要求你的博客项目中的文件结构必须是这样，来看看这�
 
   drafts 是未发布的文章。
 
-* *_includes*
 
-  你可以加载这些包含部分到你的布局或者文章中以方便重用。可以用这个标签`{% include file.ext %}` 来把文件 `_includes/file.ext` 包含进来。
 
 
 
