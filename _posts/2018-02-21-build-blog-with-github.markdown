@@ -181,6 +181,22 @@ Jekyll 要求你的博客项目中的文件结构必须是这样，来看看这�
 
   drafts 是未发布的文章。
 
+* *_posts*
+
+  这里放的就是你的文章了。文章格式很重要，必须要符合 `YEAR-MONTH-DAY-title.MARKUP`。 数据和标记语言都是根据文件名来确定的。比如这里我们将使用 Markdown 作为标记语言来进行写作，所以文件扩展名要写为 .md 或者 .markdown。
+
+* *_site*
+
+  一旦 Jekyll 完成转换，就会将生成的页面放在这里（默认）。最好将这个目录放进你的 .gitignore 文件中。
+
+* *index.html 和其它的 HTML，Markdown，Textile 文件*
+
+  如果这些文件中包含 YAML 头信息部分，Jekyll 就会自动将它们进行转换。当然，其它的如 .html，.markdown，.md 或者 .textile 等在你的站点根目录下或者不是以上提到的目录中的文件也会被转换。
+
+* 其它一些未被提及的目录和文件如 css 还有 images 文件夹，favicon.ico 等文件都将被完全拷贝到生成的 site 中。
+
+对这篇文章中所介绍的模板的修改方法请参考[这里](https://github.com/EthanTongLIU/EthanTongLIU.github.io/blob/master/README.zh.md)。
+
 
 ## 学会使用 Markdown 写作
 
