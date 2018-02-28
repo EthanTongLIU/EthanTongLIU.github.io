@@ -106,17 +106,17 @@ tags:
 
 * *找到仓库的 Settings*
 
-  ![](img/in-post/post-github-repo-setting.jpg)
+  ![img](/img/in-post/post-github-repo-setting.jpg)
 
 * *找到 Github Pages 选项，选择主分支，保存。当然你也可以在这里选择一个 theme（主题），这里的主题是 Github 提供的 Jekyll 样式的模板，但是我们稍后将自己找模板，所以这里不必选择模板*
 
-  ![](img/in-post/post-github-repo-setting-pages.jpg)
+  ![img](/img/in-post/post-github-repo-setting-pages.jpg)
 
 ### 将项目克隆到本地
 
 找到项目的地址，按下 `clone or download`，选择克隆至剪贴板，这样项目的地址就被复制下来了。
 
-![img](img/in-post/post-github-repo-copy-to-clipboard.JPG)
+![img](/img/in-post/post-github-repo-copy-to-clipboard.JPG)
 
 接着需要你在本地电脑上希望放置项目的地方运行 Github 的命令行，即`Git Bash Here`，运行如下代码：
 
@@ -146,7 +146,7 @@ git clone 项目仓库的地址
 
 你从下载好的模板中也可以看出，里面包含各种各样的文件和文件夹，其实这些名字并不是随便起的，就像下图一样，即本人的博客仓库里面的文件结构。
 
-![img](img/in-post/post-structure-of-repo.JPG)
+![img](/img/in-post/post-structure-of-repo.JPG)
 
 实际上，一个基本的 Jekyll 网站的目录结构一般是这样的：
 
@@ -238,7 +238,7 @@ git push -u origin master
 
 当你拿到注册完成的合法的域名之后，就需要将你的博客网站和注册的域名联系起来了，这一步通常称为域名解析，不同的注册平台都会对解析过程进行讲解，况且也不复杂，只是填几个空的问题，但是注意这里要在你的本地项目仓库中添加一个 CNAME 文件（文件名），里面填上你注册的域名，比如我填的就是 iliutong.cn。另外需要回到你的 Github 仓库中，找到仓库的 settings，仍然是在 Pages 设置部分，在 Custom domain 填入你注册的域名，再点击 Save，如下图。
 
-![img](img/in-post/post-github-repo-setting-pages-custom-domain.JPG)
+![img](/img/in-post/post-github-repo-setting-pages-custom-domain.JPG)
 
 这时，你需要回到域名提供商的域名控制台那里设置一下域名解析，要填写按照 CNAME 来绑定，具体内容按要求自己填写。
 
