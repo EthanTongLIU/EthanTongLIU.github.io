@@ -91,12 +91,12 @@ tags:
 
 * *登录自己的 Github，点击 + 号，创建新仓库*
 
-  ![](../img/in-post/post-github-new-repo.jpg)
+  ![](/img/in-post/post-github-new-repo.jpg)
 
 * *初始化新仓库，注意个人博客项目仓库的文件名必须写成 username.github.io 的格式，这里的 username 是你的账号名，比如我的名字是 EthanTongLIU，我的仓库的名字就取为 EthanTongLIU.github.io*
 
-  ![](img/in-post/post-github-init-new-repo.jpg)
+  ![](/img/in-post/post-github-init-new-repo.jpg)
 
 * *已经创建好的新仓库*
 
-  ![](img/in-post/post-github-new-repo-done.jpg)
+  ![](/img/in-post/post-github-new-repo-done.jpg)
