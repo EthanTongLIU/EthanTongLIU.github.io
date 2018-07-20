@@ -4,7 +4,7 @@ title:        "LaTeX笔记--01"
 subtitle:     "LaTeX中文环境排版方式总结"
 date:         2018-07-11 19:40:00
 author:       "LiuTong"
-header-img:   "img/in-post/post-bg-markdown-sublime.jpg"
+header-img:   "img/in-post/post-bg-latex-note-1.jpg"
 header-mask:  0.3
 catalog:      true
 multilingual: true
@@ -12,7 +12,7 @@ tags:
     - LaTeX
 ---
 
-
+# LaTeX 下的中文支持总结
 
 LaTeX下的中文环境排版方式有几种，目前这些方式有一些已经比较老了，也有一些比较新的方法，在此将这些方法总结一下。
 
