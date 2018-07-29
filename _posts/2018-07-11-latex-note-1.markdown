@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "LaTeX笔记--01"
+title:        "LaTeX 随笔漫谈 -- LaTeX 下的中文支持总结"
 subtitle:     "LaTeX中文环境排版方式总结"
 date:         2018-07-11 19:40:00
 author:       "LiuTong"

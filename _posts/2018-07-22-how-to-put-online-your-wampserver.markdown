@@ -9,8 +9,7 @@ header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - 计算机网络
-    - WampServer
+    - 服务器搭建
 ---
 
 # 如何上线你的本地 WampServer 服务器

@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "PHP 和 MySQL 学习笔记：一"
+title:        "PHP 和 MySQL 学习笔记 -- 零壹"
 subtitle:     ""
 date:         2018-07-23 22:12:00
 author:       "LiuTong"
