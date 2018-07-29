@@ -1,16 +1,16 @@
 ---
 layout:       post
-title:        "如何上线你的本地 WampServer 服务器"
+title:        "PHP 和 MySQL 学习笔记：一"
 subtitle:     ""
-date:         2018-07-22 22:46:00
+date:         2018-07-23 22:12:00
 author:       "LiuTong"
 header-img:   "img/in-post/post-bg-how-to-put-online-your-wampserver.jpg"
 header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - 计算机网络
-    - WampServer
+    - PHP
+    - MySQL
 ---
 
-# 如何上线你的本地 WampServer 服务器
+# PHP 和 MySQL 学习笔记：一
