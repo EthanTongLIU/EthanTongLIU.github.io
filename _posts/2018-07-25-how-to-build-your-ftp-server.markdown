@@ -22,7 +22,7 @@ tags:
 
 ![img](/img/in-post/post-build-ftp-server-1.PNG)
 
-![img](/img/in-post/post-github-new-repo.JPG)
+![img](/img/in-post/post-github-new-repo.JPG =200x)
 
 <img src="../img/in-post/post-build-ftp-server-1.PNG" alt="1.PNG" width="800">
 
