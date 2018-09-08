@@ -22,39 +22,37 @@ tags:
 
 ![img](/img/in-post/post-build-ftp-server-1.PNG)
 
-![img](/img/in-post/post-github-new-repo.JPG =200x)
+![img](/img/in-post/post-build-ftp-server-1.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-1.PNG" alt="1.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-2.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-2.PNG" alt="2.PNG" width="600">
+![img](/img/in-post/post-build-ftp-server-3.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-3.PNG" alt="3.PNG" width="400">
+![img](/img/in-post/post-build-ftp-server-4.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-4.PNG" alt="4.PNG" width="400">
+![img](/img/in-post/post-build-ftp-server-5.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-5.PNG" alt="5.PNG" width="400">
+![img](/img/in-post/post-build-ftp-server-6.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-6.PNG" alt="6.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-7.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-7.PNG" alt="7.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-8.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-8.PNG" alt="8.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-9.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-9.PNG" alt="9.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-10.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-10.PNG" alt="10.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-11.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-11.PNG" alt="11.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-12.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-12.PNG" alt="11.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-13.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-13.PNG" alt="11.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-14.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-14.PNG" alt="11.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-15.PNG)
 
-<img src="../img/in-post/post-build-ftp-server-15.PNG" alt="11.PNG" width="800">
-
-<img src="../img/in-post/post-build-ftp-server-16.PNG" alt="11.PNG" width="800">
+![img](/img/in-post/post-build-ftp-server-16.PNG)
 
 ## 为 FTP 服务器设置用户权限
 
