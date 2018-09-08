@@ -22,6 +22,8 @@ tags:
 
 ![img](/img/in-post/post-build-ftp-server-1.PNG)
 
+![img](/img/in-post/post-github-new-repo.JPG)
+
 <img src="../img/in-post/post-build-ftp-server-1.PNG" alt="1.PNG" width="800">
 
 <img src="../img/in-post/post-build-ftp-server-2.PNG" alt="2.PNG" width="600">
