@@ -20,6 +20,8 @@ tags:
 
 * **打开控制面板**
 
+![img](/img/in-post/post-build-ftp-server-1.PNG =800x)
+
 <img src="../img/in-post/post-build-ftp-server-1.PNG" alt="1.PNG" width="800">
 
 <img src="../img/in-post/post-build-ftp-server-2.PNG" alt="2.PNG" width="600">
