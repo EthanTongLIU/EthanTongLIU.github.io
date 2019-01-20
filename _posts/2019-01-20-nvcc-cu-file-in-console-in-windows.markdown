@@ -4,7 +4,7 @@ title:        "Windows 下在命令行编译 CUDA 文件"
 subtitle:     "Windows 下脱离 Visual Studio IDE，在命令行下编译 CUDA 文件"
 date:         2019-01-20 22:52:00
 author:       "LiuTong"
-header-img:   "img/in-post/post-bg-how-to-put-online-your-wampserver.jpg"
+header-img:   "img/in-post/post-bg-nvcc-cu-file-in-console-in-windows.png"
 header-mask:  0.3
 catalog:      true
 tags:
