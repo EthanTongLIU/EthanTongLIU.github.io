@@ -7,7 +7,7 @@ author:       "LiuTong"
 header-img:   "img/in-post/post-bg-markdown-sublime.jpg"
 header-mask:  0.3
 catalog:      true
-multilingual: true
+multilingual: false
 tags:
     - Sublime Text
     - LaTeX
@@ -15,6 +15,7 @@ tags:
 ---
 
 > 世上无难事，只要肯登攀。
+> <br/>
 >             ------ 毛泽东
 
 ## 初识 Markdown

@@ -7,6 +7,7 @@ author:       "LiuTong"
 header-img:   "img/in-post/post-bg-how-to-put-online-your-wampserver.jpg"
 header-mask:  0.3
 catalog:      true
+multilingual: false
 tags:
     - 服务器搭建
     - 计算机网络

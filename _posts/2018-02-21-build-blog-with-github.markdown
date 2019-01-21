@@ -7,7 +7,7 @@ author:       "LiuTong"
 header-img:   "img/in-post/post-bg-github-blog.jpg"
 header-mask:  0.3
 catalog:      true
-multilingual: true
+multilingual: false
 tags:
     - Github
     - Jekyll
@@ -15,6 +15,7 @@ tags:
 ---
 
 > 路漫漫其修远兮，吾将上下而求索。
+> <br/>
 >               ------ 屈原 《离骚》
 
 

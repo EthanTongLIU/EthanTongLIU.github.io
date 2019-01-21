@@ -7,6 +7,7 @@ author:       "LiuTong"
 header-img:   "img/in-post/post-bg-nvcc-cu-file-in-console-in-windows.png"
 header-mask:  0.3
 catalog:      true
+multilingual: false
 tags:
     - CUDA
 ---
