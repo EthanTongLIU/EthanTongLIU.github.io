@@ -111,34 +111,36 @@ xeCJK 的原始作者是孙文昌，最早 2007 年在 CTEX 社区论坛上发�
 
 以上 ctex 宏包及其系列文档类统称为 CTEX 宏集，其中，CTEX 宏集最主要包含如下内容：
 
+
+
 <table>
   <tr>
-    <th width="20%", bgcolor=yellow>类别</th>
-    <th width="20%", bgcolor=yellow>文件</th>
-    <th width="60%", bgcolor=yellow>说明</th>
+    <td> 类别 </td>
+    <td> 文件 </td>
+    <td> 说明 </td>
   </tr>
   <tr>
-    <td bgcolor=#00FF00> 文档类 </td>
+    <td> 文档类 </td>
     <td> ctexart.cls  </td>
     <td>标准文档类 article 的汉化版本，一般适用于短篇幅的文章</td>
   </tr>
   <tr>
-    <td bgcolor=#00FF00>  </td>
+    <td>  </td>
     <td>ctexrep.cls</td>
     <td>标准文档类 report 的汉化版本，一般适用于中篇幅的报告</td>
   </tr>
   <tr>
-    <td bgcolor=#00FF00>  </td>
+    <td>  </td>
     <td>ctexbook.cls</td>
     <td>标准文档类 book 的汉化版本，一般适用于长篇幅的书籍</td>
   </tr>
   <tr>
-    <td bgcolor=#00FF00>  </td>
+    <td>  </td>
     <td>ctexbeamer.cls</td>
     <td>文档类 beamer 的汉化版本，适用于幻灯片演示</td>
   </tr>
   <tr>
-    <td bgcolor=#00FF00> 宏包 </td>
+    <td> 宏包 </td>
     <td>ctex.sty</td>
     <td> 提供全部功能，但默认不开启章节标题设置功能 </td>
   </tr>
@@ -199,42 +201,42 @@ CTEX宏集会根据用户使用的编译方式，在底层选择不同的中文�
 
 <table>
   <tr>
-    <th width=10%, bgcolor=yellow>引擎</th>
-    <th width=20%, bgcolor=yellow>Mac OS X</th>
-    <th width="20%", bgcolor=yellow>Windows New</th>
-    <th width="20%", bgcolor=yellow>Windows Old</th>
-    <th width="20%", bgcolor=yellow>其他</th>
+    <td> 引擎 </td>
+    <td> Mac OS X </td>
+    <td> Windows New </td>
+    <td> Windows Old </td>
+    <td> 其他 </td>
   </tr>
   <tr>
-    <td bgcolor=#00FF00> XƎLATEX </td>
+    <td> XƎLATEX </td>
     <td> xeCJK 华文字库  </td>
     <td> xeCJK 中易字库 + 微软雅黑 </td>
     <td> xeCJK 中易字库 </td>
     <td> xeCJK Fandol 字体 </td>
   </tr>
   <tr>
-    <td bgcolor=#00FF00> LuaLaTeX </td>
+    <td> LuaLaTeX </td>
     <td> LuaTeX-ja 华文字库 </td>
     <td> LuaTeX-ja 中易字库 + 微软雅黑 </td>
     <td> LuaTeX-ja 中易字库 </td>
     <td> LuaTeX-ja Fandol 字库 </td>
   </tr>
   <tr>
-    <td bgcolor=00FF00> pdfLaTeX </td>
+    <td> pdfLaTeX </td>
     <td> 不可用 </td>
     <td> CJK + zhmetrics 中易字库+ 微软雅黑 </td>
     <td> CJK + zhmetrics 中易字库 </td>
     <td> 不可用 </td>
   </tr>
   <tr>
-    <td bgcolor=00FF00> LATEX + DVIPDFMx </td>
+    <td> LATEX + DVIPDFMx </td>
     <td> 不可用 </td>
     <td> CJK + zhmetrics 中易字库+ 微软雅黑 </td>
     <td> CJK + zhmetrics 中易字库 </td>
     <td> CJK + zhmetrics Fandol 字库 </td>
   </tr>
   <tr>
-    <td bgcolor=00FF00> upLATEX + DVIPDFMx </td>
+    <td> upLATEX + DVIPDFMx </td>
     <td> 不可用 </td>
     <td> zhmetrics-uptex 中易字库+ 微软雅黑 </td>
     <td> zhmetrics-uptex 中易字库 </td>
