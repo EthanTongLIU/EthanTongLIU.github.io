@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Ubuntu18.04 下搭建 CUDA 环境并安装 NVIDIA 显卡驱动"
+title:        "Ubuntu 18.04 下搭建 CUDA 环境并安装 NVIDIA 显卡驱动"
 subtitle:     "在 Ubuntu18.04 下安装 CUDA 并为 CUDA 安装匹配的显卡驱动"
 date:         2019-01-20 23:08:00
 author:       "LiuTong"
@@ -339,3 +339,33 @@ sudo reboot
 
 以上将 NVIDIA 显卡驱动程序安装好之后，再安装 CUDA。或者你也可以首先安装 CUDA，然后再安装 NVIDIA 显卡驱动程序（例如我）。
 
+首先去 [NVIDIA 官网](https://developer.nvidia.com/cuda-downloads)下载 CUDA，注意选对应操作系统的版本，这里我选择下载的是 Ubuntu 18.04 下的 .run 文件。然后查看我们自己系统上的 gcc 和 g++ 编译器的版本号，18.04 一般预装 gcc 与 g++ 版本号为 7.3，CUDA 10.0 是支持这个版本的 gcc 与 g++ 的，所以我们完全可以直接安装 10.0.130 版本的 CUDA。
+
+下载完后的 .run 文件名为：`cuda_10.0.130_410.48_linux.run`，我们按照官网上的说明执行如下命令：
+
+```shell
+sudo sh cuda_10.0.130_410.48_linux.run
+```
+
+进行安装，在安装过程中会有几个问题，其中有一个提示是否安装显卡驱动，加入我们电脑上之前自己没有安装过显卡驱动的话，可以选择 `yes`，但是如果选 `yes` 的话，这个显卡驱动不一定能安装成功。由于我们选择自己手动安装显卡驱动，所以这里我们选择 `no`，然后后面的选项全部都安装，最后还要配置环境变量：
+
+```shell
+sudo gedit ~/.bashrc
+```
+
+如果你用的命令行不是 bash 而是 zsh 的话，同样使用如下命令为 zsh 添加环境变量：
+
+```shell
+sudo gedit ~/.zshrc
+```
+
+这时在打开的文件末尾加上如下的两行：
+
+```
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}} 
+```
+
+注意，先查看自己的 CUDA 版本号再添加环境变量。
+
+至此，CUDA 安装成功，然后这时候你就可以 Make 自己的 CUDA Samples，然后查看运行效果了。
