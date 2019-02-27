@@ -64,7 +64,7 @@ CUDA 文件中，需要使用修饰符 `__global__` 来表示一个函数将会�
 
 现在编写一个从 GPU 中打印 Hello World 的程序，程序以并行方式执行，并行打印 10 个 Hello World，代码如下：
 
-```c
+```cpp
 #include <stdio.h>
 
 __global__ void helloFromGPU (void)
@@ -74,11 +74,9 @@ __global__ void helloFromGPU (void)
 
 int main(void)
 {
-    // hello from CPU
-    printf("Hello World from CPU!\n");
+    printf("Hello World from CPU!\n"); // hello from CPU
 
-    // hello from GPU
-    helloFromGPU <<<1,10>>> ();
+    helloFromGPU <<<1,10>>> (); // hello from GPU
     cudaDeviceReset();
     return 0;
 }
@@ -100,6 +98,27 @@ Hello World From GPU
 Hello World From GPU
 ```
 
+与 C++ 程序的混写，在编写 CUDA 程序时，在除了带关键字内核函数里，可以使用 C++ 和 CUDA C 混写的方式，然而在带有关键字的核函数中，不可以使用 C++ 的语法来写程序，只能使用 C 的语法来写程序。例如，上面的输出 Hello World 的程序可以写成如下形式：
+
+```cpp
+#include <iostream>
+#include <stdio.h>
+
+__global__ void helloFromGPU (void)
+{
+    printf("Hello World from GPU!\n");
+}
+
+int main(void)
+{
+    using namespace std;
+    cout << "Hello World from CPU!" << endl;
+
+    helloFromGPU <<< 1, 10 >>> ();
+    cudaDeviceReset();
+    return 0;
+}
+```
 
 
 
