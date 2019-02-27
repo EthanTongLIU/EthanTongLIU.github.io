@@ -30,13 +30,13 @@ CUDA 提供了两层 API 来管理 GPU 设备和组织线程，分别是
 
     使用命令：
 
-    ```shell
+    ```bash
     which nvcc
     ```
 
     输出如下：
 
-    ```shell
+    ```bash
     /usr/local/cuda-10.0/bin/nvcc
     ```
 
@@ -44,13 +44,13 @@ CUDA 提供了两层 API 来管理 GPU 设备和组织线程，分别是
 
     使用命令
 
-    ```shell
+    ```bash
     ls -l /dev/nv*
     ```
 
     输出如下
 
-    ```
+    ```bash
     crw-rw-rw- 1 root root 195,   0 2月  27 20:44 /dev/nvidia0
     crw-rw-rw- 1 root root 195, 255 2月  27 20:44 /dev/nvidiactl
     crw-rw-rw- 1 root root 195, 254 2月  27 20:44 /dev/nvidia-modeset
@@ -86,7 +86,7 @@ int main(void)
 
 程序执行结果如下：
 
-```shell
+```bash
 Hello World From CPU
 Hello World From GPU
 Hello World From GPU
@@ -102,7 +102,7 @@ Hello World From GPU
 
 与 C++ 程序的混写是值得注意的地方，在编写 CUDA 程序时，在除了带关键字的内核函数里，例如主函数里，可以使用 C++ 和 CUDA C 混写的方式，然而在带有关键字的核函数中，不可以使用 C++ 的语法来写程序，只能使用 C 的语法来写程序。例如，上面的输出 Hello World 的程序可以写成如下形式：
 
-```scss
+```cpp
 #include <iostream>
 #include <stdio.h>
 
@@ -121,6 +121,7 @@ int main(void)
     return 0;
 }
 ```
+
 
 
 
