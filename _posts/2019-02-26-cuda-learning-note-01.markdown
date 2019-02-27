@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "CUDA 学习笔记 01"
-subtitle:     "两层 API 、配置查询、编程范式"
+subtitle:     "两层 API 、配置查询、编程范式、开发环境、NVCC 编译选项"
 date:         2019-02-26 22:44:00
 author:       "LiuTong"
 header-img:   "img/in-post/post-bg-nvcc-cu-file-in-console-in-windows.png"
@@ -122,6 +122,27 @@ int main(void)
 }
 ```
 
+其中函数 `cudaDeviceReset()` 用来显式地释放和清空当前进程中与当前设备有关的所有资源。
+
+典型的 CUDA 编程范式包括 5 个主要步骤：
+
+- 分配 GPU 内存
+- 从 CPU 内存中拷贝数据到 GPU 内存
+- 调用 CUDA 内核函数来完成程序指定的运算
+- 将数据从 GPU 拷贝回 CPU 内存
+- 释放 GPU 内存空间
+
+### CUDA 开发环境
+
+CUDA 综合开发环境中包括以下几种工具：
+
+- NVIDIA Nsight 集成开发环境
+- CUDA-GDB 命令行调试器
+- 用于性能分析的可视化和命令行分析器
+- CUDA-MEMCHECK 内存分析器
+- GPU 设备管理工具
+
+### NVCC 编译选项
 
 
 
