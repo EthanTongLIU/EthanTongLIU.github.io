@@ -103,7 +103,7 @@ Hello World From GPU
 与 C++ 程序的混写是值得注意的地方，在编写 CUDA 程序时，在除了带关键字的内核函数里，例如主函数里，可以使用 C++ 和 CUDA C 混写的方式，然而在带有关键字的核函数中，不可以使用 C++ 的语法来写程序，只能使用 C 的语法来写程序。例如，上面的输出 Hello World 的程序可以写成如下形式：
 
 ```cpp
-#include <iostream>
+#include <iostream> 
 #include <stdio.h>
 
 __global__ void helloFromGPU (void)
