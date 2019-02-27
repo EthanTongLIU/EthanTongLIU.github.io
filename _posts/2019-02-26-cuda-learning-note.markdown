@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "CUDA 学习笔记 01"
-subtitle:     ""
+subtitle:     "两层 API 、配置查询、编程范式"
 date:         2019-02-26 22:44:00
 author:       "LiuTong"
 header-img:   "img/in-post/post-bg-nvcc-cu-file-in-console-in-windows.png"
@@ -74,9 +74,11 @@ __global__ void helloFromGPU (void)
 
 int main(void)
 {
-    printf("Hello World from CPU!\n"); // hello from CPU
+    /* hello from CPU */
+    printf("Hello World from CPU!\n");
 
-    helloFromGPU <<<1,10>>> (); // hello from GPU
+    /* hello from GPU */
+    helloFromGPU <<<1,10>>> ();
     cudaDeviceReset();
     return 0;
 }
@@ -98,9 +100,9 @@ Hello World From GPU
 Hello World From GPU
 ```
 
-与 C++ 程序的混写，在编写 CUDA 程序时，在除了带关键字内核函数里，可以使用 C++ 和 CUDA C 混写的方式，然而在带有关键字的核函数中，不可以使用 C++ 的语法来写程序，只能使用 C 的语法来写程序。例如，上面的输出 Hello World 的程序可以写成如下形式：
+与 C++ 程序的混写是值得注意的地方，在编写 CUDA 程序时，在除了带关键字的内核函数里，例如主函数里，可以使用 C++ 和 CUDA C 混写的方式，然而在带有关键字的核函数中，不可以使用 C++ 的语法来写程序，只能使用 C 的语法来写程序。例如，上面的输出 Hello World 的程序可以写成如下形式：
 
-```cpp
+```scss
 #include <iostream>
 #include <stdio.h>
 
