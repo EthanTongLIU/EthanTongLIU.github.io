@@ -1,10 +1,10 @@
 # Site settings
-title: 肥雪 de 博客
-SEOTitle: 肥雪的博客 | FATSNOW Blog
+title: 刘通的博客
+SEOTitle: 刘通的博客
 header-img: img/home-bg-1.jpg
 email: sunnyliutong@qq.com
-description: "这里是 @FATSNOW 的个人博客"
-keyword: "肥雪，FATSNOW"
+description: "这里是 @刘通 的个人博客"
+keyword: "刘通，LiuTong"
 url: "https://EthanTongLIU.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -67,7 +67,7 @@ ga_domain: EthanTongLIU
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写文章，写写感悟，<br>谦虚谨慎，戒骄戒躁"
+sidebar-about-description: "面对现实的时候：要争气，不要生气。<br>That's all."
 sidebar-avatar: /img/photo-self.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
