@@ -7,6 +7,7 @@ author:       "LiuTong"
 header-img:   "img/post-bg-2015.jpg"
 header-mask:  0.3
 catalog:      true
+multilingual: false
 tags:
     - 职业生涯规划
 ---
