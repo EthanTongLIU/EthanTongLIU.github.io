@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "WAMP SERVER 部署若干问题"
-subtitle:     "若干网站部署问题与排故"
+title:        "Wamp Server 部署若干问题"
+subtitle:     "若干Wamp Server网站部署问题与排故记录"
 date:         2020-12-02 23:24:00
 author:       "LiuTong"
 header-img:   "img/post-bg-website.jpg"
@@ -21,4 +21,35 @@ tags:
 
 2. 网站部署好之后，只能在本地服务器访问，局域网内无法访问
 
-   是由于Apache的配置文件没有修改。
+   是由于Apache的配置文件没有修改，Apache的配置文件默认将外网的访问权限设为了禁止，因此需要修改Apache的配置文件。
+
+   第一个文件：httpd.conf
+
+   第289行附近：
+
+   ```
+    #
+    # Controls who can get stuff from this server.
+    #
+#   onlineoffline tag - don't remove
+    Require all granted
+   ```
+
+
+   第二个文件：httpd-vhosts.conf
+
+   ```
+# Virtual Hosts
+#
+<VirtualHost *:80>
+  ServerName localhost
+  ServerAlias localhost
+  DocumentRoot "${INSTALL_DIR}/www"
+  <Directory "${INSTALL_DIR}/www/">
+    Options +Indexes +Includes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require all granted
+  </Directory>
+</VirtualHost>
+   ```
+
