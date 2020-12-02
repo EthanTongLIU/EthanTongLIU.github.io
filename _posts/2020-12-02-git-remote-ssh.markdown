@@ -2,7 +2,7 @@
 layout:       post
 title:        "将 Git 连接方式修改为 SSH"
 subtitle:     "将 Git 远程连接方式从https修改为SSH，并且在SSH失效后的设置办法"
-date:         2020-12-02 23:24:00
+date:         2020-12-02 23:25:00
 author:       "LiuTong"
 header-img:   "img/in-post/post-bg-github-blog.jpg"
 header-mask:  0.3
