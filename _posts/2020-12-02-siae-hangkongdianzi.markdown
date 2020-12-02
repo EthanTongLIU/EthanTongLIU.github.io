@@ -2,15 +2,14 @@
 layout:       post
 title:        "中欧学院的航空电子是什么？"
 subtitle:     "别陷入自我怀疑和怀疑学院的误区，最好的解决方案就是多多实践，实践是中欧学院学生最大的短板，长期忽略实践难免会有学而不思则罔的矛盾"
-date:         2020-12-02 23:24:00
+date:         2020-12-02 23:30:00
 author:       "LiuTong"
-header-img:   "img/post-bg-website.jpg"
+header-img:   "img/post-bg-avionics.jpg"
 header-mask:  0.3
 catalog:      true
 multilingual: false
 tags:
-    - 服务器
-    - 网站搭建
+    - 随笔
 ---
 
 ## 概述
@@ -23,7 +22,7 @@ tags:
 
 ## 航空电子研究生课题方向
 
-航空电子学生的研究生培养基于中国国内体系，重点集中在工学的 **0809电子科学与技术**、**0810信息与通信工程**、**0811控制科学与工程**、**0812计算机科学与技术**四个方面开展，我们所选择的研究生课题基于这些学科门类，同时大部分也应该与民航和飞机相关。
+航空电子学生的研究生培养基于中国国内体系，重点集中在工学的 **0809电子科学与技术**、**0810信息与通信工程**、**0811控制科学与工程**、**0812计算机科学与技术** 四个方面开展，我们所选择的研究生课题基于这些学科门类，同时大部分也应该与民航和飞机相关。
 
 ## 预科阶段要做好哪些准备？
 
@@ -74,6 +73,8 @@ tags:
 
 了解中欧学院航空电子的课程请戳：[培养目标-中欧航空工程师学院](https://www.cauc.edu.cn/siae/rcpy/pymb.htm)
 
-了解航空电子的定义请戳：[航空电子-百度百科](https://baike.baidu.com/item/%E8%88%AA%E7%A9%BA%E7%94%B5%E5%AD%90/2224424?fr=aladdin)
+了解航空电子的定义请戳：[Avionics-维基百科](https://en.wikipedia.org/wiki/Avionics),
+[航空电子-百度百科](https://baike.baidu.com/item/%E8%88%AA%E7%A9%BA%E7%94%B5%E5%AD%90/2224424?fr=aladdin),[What is avionics?|BAE Systems]https://www.baesystems.com/en-us/definition/what-is-avionics
+
 
 
