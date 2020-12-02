@@ -74,7 +74,7 @@ tags:
 了解中欧学院航空电子的课程请戳：[培养目标-中欧航空工程师学院](https://www.cauc.edu.cn/siae/rcpy/pymb.htm)
 
 了解航空电子的定义请戳：[Avionics-维基百科](https://en.wikipedia.org/wiki/Avionics),
-[航空电子-百度百科](https://baike.baidu.com/item/%E8%88%AA%E7%A9%BA%E7%94%B5%E5%AD%90/2224424?fr=aladdin),[What is avionics?|BAE Systems]https://www.baesystems.com/en-us/definition/what-is-avionics
+[航空电子-百度百科](https://baike.baidu.com/item/%E8%88%AA%E7%A9%BA%E7%94%B5%E5%AD%90/2224424?fr=aladdin),[What is avionics?|BAE Systems](https://www.baesystems.com/en-us/definition/what-is-avionics)
 
 
 
