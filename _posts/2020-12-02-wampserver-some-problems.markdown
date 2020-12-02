@@ -23,32 +23,57 @@ tags:
 
 是由于Apache的配置文件没有修改，Apache的配置文件默认将外网的访问权限设为了禁止，因此需要修改Apache的配置文件。
 
-第一个文件：httpd.conf
+- 第一个文件httpd.conf，第289行附近：
 
-第289行附近：
+    原文为：
+    ```
+    #
+    # Controls who can get stuff from this server.
+    #
+    # onlineoffline tag - don't remove
+      Require all denied
+    ```
+    修改为：
+    ```
+    #
+    # Controls who can get stuff from this server.
+    #
+    # onlineoffline tag - don't remove
+      Require all granted
+    ```
 
-```
-#
-# Controls who can get stuff from this server.
-#
-# onlineoffline tag - don't remove
-  Require all granted
-```
+- 第二个文件httpd-vhosts.conf
 
-第二个文件：httpd-vhosts.conf
+    原文为：
+    ```
+    # Virtual Hosts
+    #
+    <VirtualHost *:80>
+      ServerName localhost
+      ServerAlias localhost
+      DocumentRoot "${INSTALL_DIR}/www"
+      <Directory "${INSTALL_DIR}/www/">
+        Options +Indexes +Includes +FollowSymLinks +MultiViews
+        AllowOverride All
+        Require all denied
+      </Directory>
+    </VirtualHost>
+    ```
+    修改为：
+    ```
+    # Virtual Hosts
+    #
+    <VirtualHost *:80>
+      ServerName localhost
+      ServerAlias localhost
+      DocumentRoot "${INSTALL_DIR}/www"
+      <Directory "${INSTALL_DIR}/www/">
+        Options +Indexes +Includes +FollowSymLinks +MultiViews
+        AllowOverride All
+        Require all granted
+      </Directory>
+    </VirtualHost>
+    ```
 
-```
-# Virtual Hosts
-#
-<VirtualHost *:80>
-  ServerName localhost
-  ServerAlias localhost
-  DocumentRoot "${INSTALL_DIR}/www"
-  <Directory "${INSTALL_DIR}/www/">
-    Options +Indexes +Includes +FollowSymLinks +MultiViews
-    AllowOverride All
-    Require all granted
-  </Directory>
-</VirtualHost>
-```
+简单来说就是将这两处的denied修改为granted，修改完之后，再关闭本服务器的所有防火墙，之后就可以在局域网内其他电脑上访问了。
 
