@@ -31,12 +31,12 @@ tags:
 一般是IIS(Internet Information Services)服务会占用80端口，确认检查该服务会占用80端口后，可以将其全部关闭。
 
 1. 检测80端口是否被占用：打开CMD，输入以下命令
-    ```
+    ```cmd
     netstat -aon|findstr 80
     ```
 
 2. 找到占用80端口的进程，找到其进程号，假如进程号为13560，输入以下命令
-    ```
+    ```cmd
     tasklist|findstr 13560
     ```
     检查其是否为占用了80端口的程序，如果是IIS服务，则可以关闭。
@@ -50,7 +50,7 @@ tags:
 - 第一个文件httpd.conf，第289行附近：
 
     原文为：
-    ```
+    ```apache
     #
     # Controls who can get stuff from this server.
     #
@@ -58,7 +58,7 @@ tags:
       Require all denied
     ```
     修改为：
-    ```
+    ```apache
     #
     # Controls who can get stuff from this server.
     #
@@ -69,7 +69,7 @@ tags:
 - 第二个文件httpd-vhosts.conf
 
     原文为：
-    ```
+    ```apache
     # Virtual Hosts
     #
     <VirtualHost *:80>
@@ -84,7 +84,7 @@ tags:
     </VirtualHost>
     ```
     修改为：
-    ```
+    ```apache
     # Virtual Hosts
     #
     <VirtualHost *:80>

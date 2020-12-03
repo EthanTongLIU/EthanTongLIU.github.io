@@ -74,7 +74,7 @@ xeCJK 的原始作者是孙文昌，最早 2007 年在 CTEX 社区论坛上发�
 
 可以在各种文档类中使用 xeCJK 宏包，最简单的示例是：
 
-```
+```TeX
 \documentclass{article}
 \usepackage{xeCJK}
 \setCJKmainfont{SimSun} % Windows 下自带中易字库中的宋体
