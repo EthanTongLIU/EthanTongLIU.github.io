@@ -9,7 +9,6 @@ header-mask:  0.3
 catalog:      true
 multilingual: false
 tags:
-    - 生活
     - 心理学
 ---
 
