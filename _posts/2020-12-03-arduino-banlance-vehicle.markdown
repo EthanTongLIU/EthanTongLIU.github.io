@@ -4,7 +4,7 @@ title:        "基于Arduino的智能平衡小车制作"
 subtitle:     "若干Wamp Server网站部署问题与排故记录"
 date:         2020-12-03 20:04:00
 author:       "LiuTong"
-header-mask:  0.0
+header-mask:  0.2
 catalog:      true
 multilingual: false
 tags:
