@@ -1,4 +1,4 @@
-# Site settings
+# 站点设置
 title: 若为自由故
 SEOTitle: 若为自由故
 header-img: img/home-bg-2.jpg
@@ -10,7 +10,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 
 
-# SNS settings
+# 社交网站设置
 RSS: false
 weibo_username:     5553584432
 zhihu_username:     liu-tong-35-97
@@ -51,13 +51,13 @@ kramdown:
 disqus_username:                      # disqus 国内被墙，暂不启用
 
 # Netease setttings
-netease_comment: false
+netease_comment: true
 
 
 
 # Analytics settings
 # Baidu Analytics
-# ba_track_id: [your track id]
+ba_track_id: c28408a1616f31633ad7b059a8027eb1
 
 # Google Analytics
 ga_track_id:             # Format: UA-xxxxxx-xx ， 例如作者黄玄的为 'UA-49627206-1'
