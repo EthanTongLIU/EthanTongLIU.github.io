@@ -50,7 +50,7 @@ tags:
 - 第一个文件httpd.conf，第289行附近：
 
     原文为：
-    ```gc
+    ```
     #
     # Controls who can get stuff from this server.
     #

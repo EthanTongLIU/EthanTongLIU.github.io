@@ -21,11 +21,9 @@ twitter_username:
 
 
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
+# 构建设置
+permalink: pretty  # 固定连接
+paginate: 10  # 页数，即每个页面的文章数
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
@@ -37,35 +35,43 @@ gems: [jekyll-paginate]
 
 
 
-# Markdown settings
+# Markdown 设置
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    default_lang: html;
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-
-
-# Disqus settings
+# Disqus评论系统设置
 disqus_username:                      # disqus 国内被墙，暂不启用
 
-# Netease setttings
+# Netease评论系统设置
 netease_comment: true
 
 
 
-# Analytics settings
-# Baidu Analytics
+# 统计分析设置
+# Baidu统计
 ba_track_id: c28408a1616f31633ad7b059a8027eb1
 
-# Google Analytics
+# Google统计
 ga_track_id:             # Format: UA-xxxxxx-xx ， 例如作者黄玄的为 'UA-49627206-1'
 ga_domain: EthanTongLIU
 
 
 
-# Sidebar settings
+# 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "面对现实的时候：要争气，不要生气。<br>That's all."
 sidebar-avatar: /img/photo-self.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
