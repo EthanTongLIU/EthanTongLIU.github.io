@@ -6,7 +6,7 @@ email: sunnyliutong@qq.com
 description: "这里是 @刘通 的个人博客"
 keyword: "刘通，LiuTong"
 url: "https://EthanTongLIU.github.io"              # your host, for absolute URL
-baseurl: "https://EthanTongLIU.github.io"                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
