@@ -1,10 +1,11 @@
 ---
 layout:       post
 title:        "基于Arduino的智能平衡小车"
-subtitle:     "Arduino UNO 主控 + 外设的两轮智能平衡小车制作全过程记录"
+subtitle:     "Arduino UNO主控的两轮智能平衡小车制作全过程记录"
 date:         2020-12-03 20:04:00
 author:       "LiuTong"
-header-mask:  0.2
+header-img:   "img/post-bg-balance-car.jpg"
+header-mask:  0.3
 catalog:      true
 multilingual: false
 tags:
