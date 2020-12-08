@@ -65,7 +65,7 @@ tags:
 */
 
 //motor A
-int IN1 = 7;   // IN1 connected to pin 0
+int IN1 = 7;   // IN1 connected to pin 7
 int IN2 = 8;   // 
 int ENA = 6;   // PWM调速
 
@@ -74,33 +74,33 @@ int IN3 = 2;
 int IN4 = 4;
 int ENB = 5;
  
-unsigned long time = 2000;  //delay time
-int value = 240;   // the duty cycle 控制电机转速 0-255
+unsigned long time = 2000;  //延迟时间，单位：ms
+int value = 240;   // 控制电机转速，范围：0-255
 int state = 0; // 串口数据
 
 // 前进
 void goForward(){
-    analogWrite(ENA, value); // 输入模拟值设定速度
+    analogWrite(ENA, value); // PWM设定速度
     analogWrite(ENB, value);
-    digitalWrite(IN1, 1); // 使Motor A顺时针转
-    digitalWrite(IN2, 0);
-    digitalWrite(IN3, 1); // 使Motor B逆时针转
-    digitalWrite(IN4, 0);
+    digitalWrite(IN1, HIGH); // 使Motor A顺时针转
+    digitalWrite(IN2, LOW);
+    digitalWrite(IN3, HIGH); // 使Motor B逆时针转
+    digitalWrite(IN4, LOW);
 }
 
 // 后退
 void goBack(){
     analogWrite(ENA, value); 
     analogWrite(ENB, value);
-    digitalWrite(IN1, 0); 
-    digitalWrite(IN2, 1);
-    digitalWrite(IN3, 0); 
-    digitalWrite(IN4, 1);
+    digitalWrite(IN1, LOW); 
+    digitalWrite(IN2, HIGH);
+    digitalWrite(IN3, LOW);
+    digitalWrite(IN4, HIGH);
 }
 
 // 右转
 void turnRight(){
-    analogWrite(ENA, value/2); // 输入模拟值设定速度
+    analogWrite(ENA, value/2);
     analogWrite(ENB, value/2);
     digitalWrite(IN1, HIGH); 
     digitalWrite(IN2, LOW);
@@ -110,7 +110,7 @@ void turnRight(){
 
 // 左转
 void turnLeft(){
-    analogWrite(ENA, value/2); // 输入模拟值设定速度
+    analogWrite(ENA, value/2);
     analogWrite(ENB, value/2);
     digitalWrite(IN1, LOW); 
     digitalWrite(IN2, HIGH);
@@ -122,8 +122,8 @@ void turnLeft(){
 void brake(){
     digitalWrite(IN1, HIGH); 
     digitalWrite(IN2, HIGH);
-    digitalWrite(IN3, HIGH); 
-    digitalWrite(IN4, HIGH);  
+    digitalWrite(IN3, HIGH);
+    digitalWrite(IN4, HIGH);
 }
 
 void setup(){
@@ -133,8 +133,8 @@ void setup(){
     //pinMode(ENA, OUTPUT);
     pinMode(IN3, OUTPUT);
     pinMode(IN4, OUTPUT);
-    //pinMode(ENB, OUTPUT);                                                                                             
-
+    //pinMode(ENB, OUTPUT);
+    
     // 串口设置
     Serial.begin(9600); //设置串口波特率9600
 }
@@ -293,30 +293,26 @@ unsigned long times;
 unsigned long newtime; //时间变量
 
 // 前进
-void go(int speed)
-{
+void go(int speed){
     digitalWrite(IN1, HIGH);
     digitalWrite(IN2, LOW);
     analogWrite(ENA, speed);
 }
 
 // 后退
-void back(int speed)
-{
+void back(int speed){
     digitalWrite(IN1, LOW);
     digitalWrite(IN2, HIGH);
     analogWrite(ENA, speed);
 }
 
 // 刹车
-void stay()
-{
+void stay(){
     digitalWrite(IN1, HIGH);
     digitalWrite(IN2, HIGH);
 }
 
-void setup()
-{
+void setup(){
     Serial.begin(9600); //串口初始化，波特率9600
 
     pinMode(IN1,OUTPUT); //GPIO为输出
@@ -327,30 +323,24 @@ void setup()
     pinMode(BM1,INPUT); //GPIO 为输入
 }
 
-void loop()
-{
+void loop(){
     go(255);
     newtime = times = millis();
 
-    while((newtime-times) < d_time)
-    {
-        if(digitalRead(AM1) == HIGH && flagA == 0)
-        {
+    while((newtime-times) < d_time){
+        if(digitalRead(AM1) == HIGH && flagA == 0){
             valA++;
             flagA = 1;
         }
-        if(digitalRead(AM1) == LOW && flagA == 1)
-        {
+        if(digitalRead(AM1) == LOW && flagA == 1){
             valA++;
             flagA = 0;
         }
-        if(digitalRead(BM1) == HIGH && flagB == 0)
-        {
+        if(digitalRead(BM1) == HIGH && flagB == 0){
             valB++;
             flagB = 1;
         }
-        if(digitalRead(BM1) == LOW && flagB == 1)
-        {
+        if(digitalRead(BM1) == LOW && flagB == 1){
             valB++;
             flagB = 0;
         }
